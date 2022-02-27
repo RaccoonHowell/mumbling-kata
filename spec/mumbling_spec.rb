@@ -9,4 +9,9 @@ describe Mumbling do
         result = @mumbling.mumble_letters("abcd")
         expect(result).to eq("A-Bb-Ccc-Dddd")
     end
+
+    it "can return 'Q-Ww-Eee-Rrrr-Ttttt-Yyyyyy' when given 'QWERTY'" do
+        result = @mumbling.mumble_letters("QWERTY")
+        expect(result).to eq("Q-Ww-Eee-Rrrr-Ttttt-Yyyyyy")
+    end
 end
