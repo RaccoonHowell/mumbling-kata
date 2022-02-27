@@ -3,9 +3,9 @@ class Mumbling
         new_string = []
 
         string.split("").each_with_index do |char, index|
-            new_string << char * (index + 1)
+            new_string << (char * (index + 1)).capitalize
         end
 
-        new_string.join.capitalize
+        new_string.join
     end
 end
