@@ -1,5 +1,5 @@
 class Mumbling
     def mumble_letters string
-        string
+        string.capitalize
     end
 end
