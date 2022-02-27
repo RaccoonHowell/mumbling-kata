@@ -9,4 +9,9 @@ describe Mumbling do
         result = @mumbling.mumble_letters("abc")
         expect(result).to eq("Abbccc")
     end
+
+    it "can return 'ABbCcc' when given 'abc'" do
+        result = @mumbling.mumble_letters("abc")
+        expect(result).to eq("ABbCcc")
+    end
 end
