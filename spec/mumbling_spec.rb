@@ -14,4 +14,9 @@ describe Mumbling do
         result = @mumbling.mumble_letters("QWERTY")
         expect(result).to eq("Q-Ww-Eee-Rrrr-Ttttt-Yyyyyy")
     end
+
+    it "can handle an empty string input appropriately'" do
+        result = @mumbling.mumble_letters("")
+        expect(result).to eq("")
+    end
 end
