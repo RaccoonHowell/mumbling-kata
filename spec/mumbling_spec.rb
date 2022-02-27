@@ -9,4 +9,9 @@ describe Mumbling do
         result = @mumbling.mumble_letters('hello')
         expect(result).to eq('hello')
     end
+
+    it "can return a capitalised string when given a lowercase string" do
+        result = @mumbling.mumble_letters('hello')
+        expect(result).to eq('Hello')
+    end
 end
