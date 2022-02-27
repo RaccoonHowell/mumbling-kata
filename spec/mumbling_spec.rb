@@ -6,7 +6,12 @@ describe Mumbling do
     end
 
     it "can return a capitalised string when given a lowercase string" do
-        result = @mumbling.mumble_letters('hello')
-        expect(result).to eq('Hello')
+        result = @mumbling.mumble_letters("hello")
+        expect(result).to eq("Hello")
+    end
+
+    it "can return 'Abbccc' when given 'abc'" do
+        result = @mumbling.mumble_letters("abc")
+        expect(result).to eq("Abbccc")
     end
 end
