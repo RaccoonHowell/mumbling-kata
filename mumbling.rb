@@ -6,6 +6,6 @@ class Mumbling
             new_string << (char * (index + 1)).capitalize
         end
 
-        new_string.join
+        new_string.join("-")
     end
 end
